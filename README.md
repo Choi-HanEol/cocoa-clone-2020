@@ -1,3 +1,3 @@
 # Kokoa Clone 2020 Update
 
-HTML & CSS are so much fun!
+Cocoa Clone for my front-end study
