@@ -1,0 +1,54 @@
+.welcome-header {
+  margin: 90px 0px; /*상하는 90px간격을 두고 좌우는 0px*/
+  text-align: center; /*h1이 text형식이고 그것을 center로 위치시킴*/
+  display: flex;
+  flex-direction: column; /*p, h1이 좌우가 아니라 위아래로 놓임*/
+  align-items: center;
+}
+.welcome-header__title {
+  margin-bottom: 40px;
+  font-size: 25px;
+}
+.welcome-header__text {
+  width: 60%;
+  font-weight: 500; /*글자 굵기를 설정*/
+  /*color: gray;*/ /*이렇게 color를 바꾸거나*/
+  opacity: 0.6; /*투명도를 낮춰서 텍스트를 회색으로 만듦*/
+}
+
+#login-form {
+  display: flex;
+  flex-direction: column; /*login-form의 모든 것들이 위에서 아래로 위치하도록.*/
+  margin: 0px 30px; /*상하 0px, 좌우 30px*/
+}
+
+#login-form input {
+  border: none; /*경계 border을 없앰*/
+  padding: 15px 0px;
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+#login-form input:not([type="submit"]) {
+  /*type이 submit인 input을 제외한 나머지에 아래를 적용
+    그렇다면 결국 submit의 border은 위 블락에서의 border:none;으로 인해 none으로 처리됨*/
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  transition: border-color 0.3s ease-in-out;
+}
+#login-form input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+}
+#login-form input:focus {
+  border-color: var(--yellow);
+}
+#login-form input[type="submit"] {
+  background-color: var(--yellow);
+  cursor: pointer;
+  padding: 20px 0px; /*버튼의 크기를 조금 키움*/
+  border-radius: 5px; /*버튼 모서리를 뭉툭하게*/
+}
+#login-form a {
+  text-align: center; /*링크가 중간에 위치하도록*/
+  text-decoration: none; /*밑줄을 없앰*/
+  color: inherit; /*색을 부모로부터 상속받음*/
+  font-size: 13px;
+}

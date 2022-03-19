@@ -1,0 +1,32 @@
+.status-bar {
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+} /*status-bar를 한줄에 두고, 각 요소와 공간을 둠*/
+
+.status-bar__column {
+  width: 33%;
+} /*모든 column에 33%의 width를 가지게 한다.*/
+
+.status-bar__column:first-child span {
+  /*html코드에서 No Service부분을 가리킴*/
+  margin-right: 5px;
+} /*No Service와 와이파이 아이콘을 조금 떨어뜨려 놓음*/
+
+.status-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+} /*시간 부분을 center로 둠*/
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+} /*배터리부분 오른쪽 끝으로 위치시키고 아이콘 수직부분에서 center*/
+
+.status-bar__column .fa-battery-quarter {
+  margin: 0px 5px;
+} /*배터리 아이콘을 기준으로 양 옆으로 5px 공간을 둠*/
