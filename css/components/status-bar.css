@@ -1,5 +1,6 @@
 .status-bar {
-  position: fixed;
+  position: fixed; /*고정 시킴*/
+  top: 0; /*상단에 위치시킴*/
   width: 100%;
   box-sizing: border-box;
   display: flex;
