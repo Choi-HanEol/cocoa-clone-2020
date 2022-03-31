@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More - Cocoa Clone</title>
+</head>
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>11%</span>
+            <i class="fas fa-battery-quarter fa-xl"></i> <!--fa-xl을 이용하여 아이콘의 크기를 변경-->
+            <i class="fa-solid fa-bolt-lightning"></i>
+        </div>
+    </div>
+    <header class="screen-header">
+        <h1 class="screen-header__title">More</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-lg"></i></span>
+            <span><i class="fas fa-music fa-lg"></i></span>
+            <span><a href="settings.html"><i class="fas fa-cog fa-lg"></i></a></span>
+        </div>
+    </header>
+
+    <main class="main-screen more-screen">
+        <div class="user-component"> <!--반복해서 사용할 것이기 때문에 class-->
+            <div class="user-component__column">
+                <img src="https://mblogthumb-phinf.pstatic.net/20140907_286/goodmanddo_1410097491233H9enH_JPEG/%C4%AB%C4%AB%BF%C0%C5%E5_%B4%EB%B5%CE.jpg?type=w2" class="user-component__avatar user-component__avatar--xl"/>
+                <div class="user-component__text">
+                    <h4 class="user-component__title">Haneol</h4>
+                    <h6 class="user-component__subtitle">+82-10-123-4567</h6>
+                    <i class="fas fa-exclamation-circle"></i>
+                </div>
+            </div>
+            <div class="user-component__column">
+                <i class="far fa-comment-alt fa-2x"></i>
+            </div>
+        </div>
+        <div class="icon-row">
+            <div class="icon-row__icon"><i class="far fa-calendar"></i><span>Calendar</span></div>
+            <div class="icon-row__icon"><i class="fab fa-google-drive"></i><span>Talk Drive</span></div>
+            <div class="icon-row__icon"><i class="far fa-grin-beam"></i><span>Emoticons</span></div>
+            <div class="icon-row__icon"><i class="fas fa-paint-roller"></i><span>Themes</span></div>
+            <div class="icon-row__icon"><i class="far fa-user"></i><span>Account</span></div>
+            <div class="icon-row__icon"><i class="far fa-comments"></i><span>Openchat</span></div>
+        </div>
+        <div class="more-suggestions">
+            <h4 class="more-suggestions__title">Suggestions</h4>
+            <div class="more-suggestions__icons">
+                <div class="more-suggestions__icon">
+                    <img src="data:image/png;base64,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" class="more-suggestions__icon-image">
+                    <!-- <div class="more-suggestions__icon-image"></div> -->
+                    <div class="more-suggestions__icon-text">Cocoa Story</div>
+                </div>
+                <div class="more-suggestions__icon">
+                    <img src="https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2F20160603_164%2Fjuliana_sol_1464912527434CaUGl_JPEG%2FattachImage_234811736.jpeg&type=a340" class="more-suggestions__icon-image">
+                    <!-- <div class="more-suggestions__icon-image"></div> -->
+                    <div class="more-suggestions__icon-text">Cocoa friends</div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="far fa-user fa-2x"></i></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="chats.html">
+                <span class="nav__notification badge">1</span><i class="far fa-comment fa-2x"></i></i></i></a>
+            </li>
+            <li class="nav__btn"><a class="nav__link" href="find.html"><i class="fas fa-search fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="more.html">
+                <span class="nav__ellipsis_notification badge__dot"></span><i class="fa-solid fa-ellipsis fa-2x"></i></a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="https://kit.fontawesome.com/d6c039b058.js" crossorigin="anonymous"></script>
+</body>
+</html>
