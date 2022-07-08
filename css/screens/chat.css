@@ -1,9 +1,22 @@
-.alt-header__column span {
-    margin-left: 25px;
-}
-.alt-header__title {
-    margin-left: 50px;
-}
-  #chat-screen{
+#chat-screen{
     background-color: #abc1d1;
+    height: 11000vh;
+}
+
+#chat-screen .alt-header
+{
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box ;
+}
+#chat-screen .status-bar{
+    z-index: 2;
+}
+#chat-screen .alt-header{
+    top: 10px;
+    z-index: 1;
+}
+
+.main-chat{
+    margin-top: 150px;
 }
