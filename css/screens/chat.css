@@ -3,10 +3,12 @@
     height: 11000vh;
 }
 
-#chat-screen .alt-header
+#chat-screen .alt-header,
+#chat-screen .status-bar
 {
     position: fixed;
     width: 100%;
+    background-color: #abc1d1;
     box-sizing: border-box ;
 }
 #chat-screen .status-bar{
@@ -18,5 +20,15 @@
 }
 
 .main-chat{
-    margin-top: 150px;
+    margin-top: 120px;
+    display: flex;  /*요소들이 가로 방향 배치, 자신이 가진 내용물의 width만큼 차지*/
+    flex-direction: column; /*요소들이 위아래로 정렬*/
+    align-items: center;
+}
+.chat__timestamp {
+    color: white;
+    background-color: #92a4b2;
+    padding: 10px 15px;
+    font-size: 14px;
+    border-radius: 25px;
 }
